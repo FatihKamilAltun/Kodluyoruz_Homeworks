@@ -23,8 +23,13 @@ public class HesapMakinesi {
                 System.out.println("Sonuc : " + (sayi1-sayi2));
                 break;
             case 3:
-                if (sayi2!=0){System.out.println("Sonuc : " + (sayi1/sayi2));
-                } else System.out.println("Bir sayi sifira bolunemez");
+                switch ((int) sayi2){
+                    case 0:
+                        System.out.println("Bir sayi sifira bolunemez");
+                    break;
+                    default:
+                        System.out.println("Sonuc : " + sayi1/sayi2);
+                }
                 break;
             case 4:
                 System.out.println("Sonuc : " + (sayi1*sayi2));
